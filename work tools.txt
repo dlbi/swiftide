@@ -1,0 +1,4 @@
+FONT AWESOME
+
+<i class='fa fa-user teal-color'></i>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>    
