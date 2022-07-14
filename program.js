@@ -1,5 +1,7 @@
 // Notice Modal
 const noticeModal = document.querySelector('#myNoticeModal');
+let closeNotice = document.querySelector('#close');
+let closeNoticeBtn = document.querySelector('#close-pop');
 
 setTimeout(
     function(){
@@ -12,13 +14,19 @@ window.onclick = function(event) {
         noticeModal.style.display = 'none';
     }
 };
+closeNotice.addEventListener('click', function(){
+    noticeModal.style.display = 'none';
+});
+closeNoticeBtn.addEventListener('click', function(){
+    noticeModal.style.display = 'none';
+})
 // MODAL BEGINNING
 const modal = document.querySelector('#myModal');
 const ibtn = document.querySelector('#openIModal');
 const tbtn = document.querySelector('#openTModal');
 const cabtn = document.querySelector('#openCAModal');
 const cpbtn = document.querySelector('#openCPModal');
-let span = document.querySelector('.close');
+let span = document.getElementsByClassName('close');
 let formName = document.querySelector('.exam-name');
 let examType = ['IELTS', 'TOEFL', 'CAE', 'CPE'];
 
@@ -29,6 +37,7 @@ ibtn.onclick = function() {
 };
 span.onclick = function() {
     modal.style.display = 'none';
+    noticeModal.style.display = 'none';
 };
 
 window.onclick = function(event) {
