@@ -1,3 +1,17 @@
+// Notice Modal
+const noticeModal = document.querySelector('#myNoticeModal');
+
+setTimeout(
+    function(){
+        noticeModal.style.display = 'block';
+    }
+    , 5000
+);
+window.onclick = function(event) {
+    if (event.target === noticeModal) {
+        noticeModal.style.display = 'none';
+    }
+};
 // MODAL BEGINNING
 const modal = document.querySelector('#myModal');
 const ibtn = document.querySelector('#openIModal');
@@ -59,18 +73,3 @@ startBtn.addEventListener('click', function(){
 nextBtn.addEventListener('click', function(){
     
 })
-// const=;
-// const=;
-// const=;
-// function validateForm() {
-//     // use an array to get all the inputs, then if array[values] = "" alert error
-//     let x = document.forms['myForm'];
-//     // ['First_Name'].value
-//     console.log(x);
-//     if (x == ""){
-//         alert ('name cannot be blank');
-//         return false;
-//     }
-
-// }
-// validateForm()
