@@ -18,323 +18,172 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swift Approach To Learning</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./mcmenu.css">
     <script src="jquery-3.6.0.min.js"></script>
 </head>
 <body>
+     <!-- NAV BAR -->
+     <nav class="nav" id="navBar">
+        <!-- Logo -->
+        <div class="logo">Logo</div>
+        <!-- navMenu -->
+        <ul>
+            <!-- Let's get a ham -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">Take Test</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Developers</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="" id="signUpBtn">Sign up</a></li>
+            </div>
+        </ul>
+     </nav>
+    <!-- END OF NAV -->
     <div class="capsule1">
     <div class="capsule2">
-
-    <h1 class="logo">LOGO</h1>
-    <!-- NAV BAR -->
-    <div id="menuDemo">
-        <!--start McMenu-->
-        <div class="menu-icon-wrapper">
-            <div class="menu-icon" data-menu="mcmenu">
-                <div class="three-line">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <div id="mcmenu">
-            <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li>
-                    <span>Creative <i class="arrow"></i></span>
-                    <ul class="dropdown">
-                        <li><a href="#">Curabitur</a></li>
-                        <li>
-                            <span>Suspendisse vel <i class="arrow"></i></span>
-                            <ul class="dropdown">
-                                <li><a href="#">Etiam vestibulum</a></li>
-                                <li><a href="#">Integer efficitur</a></li>
-                                <li><a href="#">Finibus nibh</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <span>
-                                Eget
-                                <img src="mcmenu/img1.jpg" style="margin:10px;width:80px;vertical-align:middle;" />
-                                <i class="arrow"></i>
-                            </span>
-                            <ul class="dropdown">
-                                <li><a href="#">Nam elementum</a></li>
-                                <li><a href="#">Magna pharetra</a></li>
-                                <li><a href="#">Pulvinar mi eget</a></li>
-                                <li><a href="#">Tincidunt orci</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Studio</a></li>
-                <li class="full-width">
-                    <span>Press <i class="arrow"></i></span>
-                    <div class="dropdown">
-                        <div class="clm">
-                            <h3>Integer</h3>
-                            <a href="#">Lacus iaculis</a>
-                            <a href="#">Eu tortor</a>
-                            <a href="#">Luctus varius</a>
-                        </div>
-                        <div class="clm">
-                            <h3>Efficitur Viverra</h3>
-                            <a href="#">Praesent</a>
-                            <h3>At Eros</h3>
-                            <a href="#">Pellentesque </a>
-                            <a href="#">Dignissim pulvinar</a>
-                        </div>
-                        <div class="clm">
-                            <a href="#"><img src="mcmenu/img2.jpg" style="width:280px;" /></a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="#">Blog</a></li>
-                <li>
-                    <span>Contact <i class="arrow"></i></span>
-                    <ul class="dropdown right0">
-                        <li><a href="#">Nam elementum</a></li>
-                        <li><a href="#">Magna pharetra</a></li>
-                        <li><a href="#">Pulvinar mi eget</a></li>
-                        <li><a href="#">Tincidunt orci</a></li>
-                        <li>
-                            <span>
-                                Eget
-                                <img src="mcmenu/img1.jpg" style="margin:10px;width:80px;vertical-align:middle;" />
-                                <i class="arrow"></i>
-                            </span>
-                            <ul class="dropdown right0">
-                                <li><a href="#">Nam elementum</a></li>
-                                <li><a href="#">Magna pharetra</a></li>
-                                <li><a href="#">Pulvinar mi eget</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!--end McMenu-->
-        </div>
-    <!-- END OF NAV -->
-
     <!--Main Display-->
     <header>
         <div class="top-display">
             <div>
                 <h1 class="first-head"><span>Get Tested.</span> Take International Mock Tests For <span id="spin"></span></h1>
-                <h2 class="access-h2">Get Full Access To International Mock Tests & Study Materials For Migration, Study or Work</h2>
-                <p class="access-p">Immigration made easy. Our team has carefully curated online tests that can be taken on both mobile phones and PC. We provide full study materials for the english proficiency tests needed for immigration purposes.</p>
-                <h3 class="typewriter">Access:</h3>
-                <ul>
-                    <li><span class="span-arrow">></span>&nbsp; <b>TOEFL</b>, <b> IELTS</b>, <b>CAE</b> Online Tests</li>
-                    <li><span class="span-arrow">></span>&nbsp; Study Materials</li>
-                    <li><span class="span-arrow">></span>&nbsp; InfoGuide on Immigration to <b>USA</b>, <b>Canada</b></li>
-                </ul><br>
-                <button class="f-btn">Get Materials</button>
-                <button class="s-btn">Learn More &nbsp;&rarr;</button>        
+                <p class="access-p">Get Full Access To International Mock Tests & Study Materials For Migration, Study or Work. Immigration made easy. Our team has carefully curated online tests that can be taken on both mobile phones and PC. We provide full study materials for the english proficiency tests needed for immigration purposes.</p>
+                <div class="f-btn" id="lrnPop">Learn More &nbsp;&rarr;<span class="tooltiptext">English proficiency tests is often required for migration (for study, work, permanent relocation etc)...</span></div>
             </div>
         </div>
     </header>
-
-    <img src="./bg-images/qwaexawd .png" width="100%" class="skyline" alt="">
+    <br><br><br>
 </div>
 </div>
+<!-- offer -->
 
+<section class="offer-section">
+    <div class="line"></div>
+    <div class="offer">
+    <h1>What do you get?</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nobis non facere repellat totam tenetur?</p>
+    <div class="offer-boxes">
+        <div class="offer1" data-aos="fade-up" data-aos-duration="3000">
+            <img src="" alt="offer-icon1">
+            <h2 class="offer-dblue">Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime error, consectetur ad, in saepe quod vitae animi eius laboriosam at, rem adipisci ut velit?</p>
+        </div>
+        <div class="offer2" data-aos="fade-up" data-aos-duration="3000">
+            <img src="" alt="offer-icon2">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime error, consectetur ad, in saepe quod vitae animi eius laboriosam at, rem adipisci ut velit?</p>
+        </div>
+        <div class="offer3" data-aos="fade-up" data-aos-duration="3000">
+            <img src="" alt="offer-icon3">
+            <h2 class="offer-dblue">Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime error, consectetur ad, in saepe quod vitae animi eius laboriosam at, rem adipisci ut velit?</p>
+        </div>
+    </div>
+    </div>
+    </section>
+    <!-- end-offer -->
+    <!-- Mock Test anchor -->
     <section class="section-one">
-        <h3 class="section-1">What We Serve</h3>
+        <div class="line"></div>
         <h2 class="section-2">Available Mock Tests</h2>
-        <p class="section-3">Try a variety of benefits while using our services</p>
-
+        <p class="rev-imd-txt">Try a variety of benefits while using our services</p>
         <div class="value-boxes">
             <div>
-                1
             </div>
-
             <div>
-                2
+                <h2 data-aos="fade-up" data-aos-duration="3000">Test your proficiency</h2>
+                <h2 data-aos="fade-up" data-aos-duration="3000"> Take optimized international mock tests</h2>
+                <p data-aos="fade-up" data-aos-duration="3000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit vitae voluptatum dolorum amet, fuga corporis sint quam. Voluptatibus atque consectetur qui earum fugiat, fuga animi, sit, facere cumque repudiandae a?</p>
+                <a href="pre-text-page.html"><button>Take Test</button></a>
             </div>
-       
         </div>
     </section>
 
 
+<!-- Free study materials -->
+<section class="study-m">
+    <div class="m-box">
+        <div class="m-b-1"></div>
+        <div class="m-b-2"></div>
+    </div>
 
+</section>
+<!-- end free study materials -->
 
+<!-- Review -->
+<div class="review">
+    <div class="line"></div>
+    <h1>Reviews</h1>
+    <p class="rev-imd-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat dolores ipsam rem!</p>
+    <br><br>
+   <div class="review-boxes"> 
+    <div data-aos="fade-up" data-aos-duration="3000">
+        <img src="" alt="user-picture">
+        <br>
+     <p class="reviewer-name">Emmanuel K.</p>
+     <p class="review-text"><q> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero temporibus corporis nobis, autem adipisci beatae. Corrupti iste nam obcaecati ipsum doloremque dolore ut. Eligendi </q></p>
+    </div>
+    <div data-aos="fade-down" data-aos-duration="3000">
+        <img src="" alt="user-picture">
+        <br>
+     <p class="reviewer-name">Emmanuel K.</p>
+     <p class="review-text"><q> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero temporibus corporis nobis, autem adipisci beatae. Corrupti iste nam obcaecati ipsum doloremque dolore ut. Eligendi </q></p>
+    </div>
+       <div data-aos="fade-up" data-aos-duration="3000">
+           <img src="" alt="user-picture">
+           <br>
+        <p class="reviewer-name">Emmanuel K.</p>
+        <p class="review-text"><q> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero temporibus corporis nobis, autem adipisci beatae. Corrupti iste nam obcaecati ipsum doloremque dolore ut. Eligendi </q></p>
+       </div>
+       
+   </div>
+</div>
+<!-- end-review -->
     <!-- Notice Modal -->
-    <div class="noticeModal" id="myNoticeModal">
+    <div class="noticeModal" id="myNoticeModal" >
         <div class="notice-modal-content">
             <span class="close" id="close">&times;</span>
             <img src="./icons/b.jpg" width="80%" alt="website-being built">
             <h2>Sorry!!!</h2>
             <p>Had to interrupt your smooth scroll to let you know that the website is still under construction. </p>
             <p>So...</p>
-            <button id="close-pop">Back to page please</button>
+            <button id="close-pop">Back to page</button>
         </div>
     </div>
     <!-- End Notice Modal -->
-
-
-
-
-    <!-- <section class="section-two">
-        <h3 class="section-1">Top Universities</h3>
-        <h2 class="section-2">Explore Top Universities In UK, Canada & USA</h2>
-
-        <div class="slider">
-            
-            <a href="#slide-1">1</a>
-            <a href="#slide-2">2</a>
-            <a href="#slide-3">3</a>
-            <a href="#slide-4">4</a>
-            <a href="#slide-5">5</a>
-            <br><br>
-            <div class="slides">
-                <div id="slide-1"><img src="images/oluy.jpg" 
-                    width="100%" alt="">
-                <h4>CONCORDIA UNIVERSITY,  CANADA</h4>
-                <p><span class="color-stars">&starf;&starf;&starf;&starf;&star;</span></p>
-                <button>Read More</button>
-                </div>
-                <div id="slide-2"><img src="images/oluyy.jfif" 
-                    width="100%" alt="">
-                    <h4>CAMBRIDGE UNIVERSITY, QUEBEC</h4>
-                    <p><span class="color-stars">&starf;&starf;&starf;&starf;&star;</span></p>
-                    <button>Read More</button>
-                </div>
-                <div id="slide-3"><img src="images/oluy.jpg" 
-                    width="100%" alt=""> <h4>STANFORD UNIVERSITY, DC</h4>
-                    <p><span class="color-stars">&starf;&starf;&starf;&starf;&star;</span></p>
-                    <button>Read More</button></div>
-                <div id="slide-4"><img src="images/oluy.jpg" 
-                    width="100%" alt=""> <h4>M.I.T. USA</h4>
-                    <p><span class="color-stars">&starf;&starf;&starf;&starf;&star;</span></p>
-                    <button>Read More</button></div>
-                <div id="slide-4"><img src="images/oluy.jpg" 
-                    width="100%" alt=""> <h4>M.I.T. USA</h4>
-                    <p><span class="color-stars">&starf;&starf;&starf;&starf;&star;</span></p>
-                    <button>Read More</button></div>
-                <div id="slide-4"><img src="images/oluy.jpg" 
-                    width="100%" alt=""> <h4>M.I.T. USA</h4>
-                    <p><span class="color-stars">&starf;&starf;&starf;&starf;&star;</span></p>
-                    <button>Read More</button></div>
-                <div id="slide-4"><img src="images/oluy.jpg" 
-                    width="100%" alt=""> <h4>M.I.T. USA</h4>
-                    <p><span class="color-stars">&starf;&starf;&starf;&starf;&star;</span></p>
-                    <button>Read More</button></div>
-                <div id="slide-5"><img src="images/oluy.jpg" 
-                    width="100%" alt=""> <h4>CALTECH, CALIFORNIA</h4>
-                    <p><span class="color-stars">&starf;&starf;&starf;&starf;&star;</span></p>
-                    <button>Read More</button></div>
-            </div>
-        </div>
-    </section>
-    <section class="scholarships">
-        <div class="schol-1">
-            <h3 class="schol-h3">Scholarships</h3>
-            <h1>Get Robust Information On Latest Scholarships</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veniam officia placeat error assumenda voluptas id eius eaque temporibus illum?<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, doloribus! Quam modi fugiat molestias minima expedita eum, labore inventore, consequuntur quasi in reprehenderit omnis voluptatibus?</p>
-            <button>Learn More</button>
-        </div>
-        <div class="schol-2">
-            <img src="gif/lolz.png" alt="">
-        </div>
-    </section>
-    <br><br>
-    <section class="participate">
-        <div>
-        <h3>TOEFL, IELLTS & CAE</h3>
-        <h1>Take Online Mock Test</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam necessitatibus mollitia quia nostrum fuga eveniet earum eligendi in fugit, quo qui maiores, est rerum velit?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, id.</p>
-        <a href="pre-text-page.html"><button>Take Test</button></a>
-        </div>
-    </section>
-
-<br><br><br>
-    <div class="review">
-        <h1>Reviews</h1><br><br>
-       <div class="review-boxes">
-        <div>
-            
-            <p class="reviewer-name"> <i class='fa fa-user red-color'></i>  Emmanuel K. <br><span class="stars">&starf;&starf;&starf;&starf;&starf;</span></p>
-            
-            <p class="review-text"><q> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero temporibus corporis nobis, autem adipisci beatae. Corrupti iste nam obcaecati ipsum doloremque dolore ut. Eligendi </q></p>
-           </div><div>
-        
-            <p class="reviewer-name"> <i class='fa fa-user red-color'></i>  Emmanuel K. <br><span class="stars">&starf;&starf;&starf;&starf;&starf;</span></p>
-            
-            <p class="review-text"><q> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero temporibus corporis nobis, autem adipisci beatae. Corrupti iste nam obcaecati ipsum doloremque dolore ut. Eligendi </q></p>
-           </div><div>
-            
-            <p class="reviewer-name"> <i class='fa fa-user red-color'></i>  Emmanuel K. <br><span class="stars">&starf;&starf;&starf;&starf;&starf;</span></p>
-            
-            <p class="review-text"><q> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero temporibus corporis nobis, autem adipisci beatae. Corrupti iste nam obcaecati ipsum doloremque dolore ut. Eligendi </q></p>
-           </div><div>
-            
-            <p class="reviewer-name"> <i class='fa fa-user red-color'></i>  Emmanuel K. <br><span class="stars">&starf;&starf;&starf;&starf;&starf;</span></p>
-            
-            <p class="review-text"><q> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero temporibus corporis nobis, autem adipisci beatae. Corrupti iste nam obcaecati ipsum doloremque dolore ut. Eligendi </q></p>
-           </div>
-           
-       </div>
-    </div><br><br>
-
-    <section>
-        <div class="h1latest">
-        <h1>Latest</h1>
-        </div>
-        <div class="latest-news">
-            <div class="latest-news1">
-                <div class="late-slide">
-                    <img src="images/oluy.jpg" width="100%" alt="">
-                    <h4>M.I.T. USA</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi laudantium enim voluptate dolores id placeat rem nostrum soluta voluptas</p>
-                </div>
-                <div class="late-slide">
-                    <img src="images/oluy.jpg" width="100%" alt="">
-                    <h4>M.I.T. USA</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi laudantium enim voluptate dolores id placeat rem nostrum soluta voluptas</p>
-                </div><div class="late-slide">
-                    <img src="images/oluy.jpg" width="100%" alt="">
-                    <h4>M.I.T. USA</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi laudantium enim voluptate dolores id placeat rem nostrum soluta voluptas</p>
-                </div>
-                <div class="late-slide">
-                    <img src="images/oluy.jpg" width="100%" alt="">
-                    <h4>M.I.T. USA</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi laudantium enim voluptate dolores id placeat rem nostrum soluta voluptas</p>
-                </div>
-
-            </div>
-            <div class="latest-news2">
-                <div class="late-slide">
-                    <img src="images/oluy.jpg" width="100%" alt="">
-                    <h4>M.I.T. USA</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi laudantium enim voluptate dolores id placeat rem nostrum soluta voluptas</p>
-                </div>
-                <div class="late-slide">
-                    <img src="images/oluy.jpg" width="100%" alt="">
-                    <h4>M.I.T. USA</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi laudantium enim voluptate dolores id placeat rem nostrum soluta voluptas</p>
-                </div>
-                <div class="late-slide">
-                    <img src="images/oluy.jpg" width="100%" alt="">
-                    <h4>M.I.T. USA</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi laudantium enim voluptate dolores id placeat rem nostrum soluta voluptas</p>
+    <!-- learn more modal -->
+        <div id="learnMore">
+            <div class="learn-more-content">
+               
+                <div><img src="./images/exam.jpg" width="80%" alt="website-being built"></div>
+                <div>
+                    <span class="closeLrn" id="cls">&times;</span>
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing</h2>
+                    <p class="lrnMre-p1">Lorem, ipsum dolor</p>
+                    <p class="lrnMre-p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit possimus dignissimos minus nam nostrum cum corporis dolorum in officiis eaque iste consectetur vitae provident aperiam repellat, iure eveniet magnam veniam similique vero temporibus natus illum inventore? Repudiandae est repellendus itaque sint ea suscipit dicta possimus culpa sunt quibusdam. Fuga, quaerat!</p>   
+                    <a href="#"><button id="close-pop-lrnMre">Read More</button></a>
                 </div>
             </div>
         </div>
-    </section>
+        <!-- End Notice Modal -->
 
-    <div class="map"><img src="images/map.svg" width="100%" height="auto" alt=""></div> -->
-
-
+<section class="newsletter">
+    <h1>Subscribe to our Newsletter</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ipsum! Non, incidunt! Nobis nesciunt officiis mollitia velit nulla laudantium ipsum?</p>
+    <form action="#">
+        <input type="email" name="user-email" placeholder="janedoe@email.com" id="mail" required><input id="submit-btn" type="submit" value="Subscribe">
+    </form>
+</section>
     <footer>
         <div class="cover">
             <div><h1>LOGO</h1></div>
-            <div>
+            `<div>
                 <ul>
                     <li>CDN ARDUINO</li>
                     <li>ARTIFICIAL SEARCH</li>
@@ -360,6 +209,23 @@
         </div>
         <p class="copyright">Copyright &copy; 2022 ||  TravelNow Agency - Critic Inc.</p>
     </footer>
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+</script>
+<script>
+    hljs.initHighlightingOnLoad();
+
+    $('.hero__scroll').on('click', function(e) {
+        $('html, body').animate({
+            scrollTop: $(window).height()
+        }, 1200);
+    });
+</script>
     <script src="./mcmenu.js"></script>
     <script src="program.js"></script>
 </body>
