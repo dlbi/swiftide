@@ -12,7 +12,6 @@ body {
     font-family:sans-serif;
     scroll-behavior: smooth;
 }
-
 * a {
     text-decoration: none;
     color: inherit;
@@ -21,7 +20,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
 img {
     user-zoom: none;
     user-select: none;
@@ -59,7 +57,6 @@ li {
 .active {
     border-bottom: 2px solid #000;
 }
-
 .nav {
     width: 100%;
     background: rgba(180, 180, 180, 0.1);
@@ -94,10 +91,7 @@ li {
 .menu li {
     padding: 10px;
 }
-
 .menu li:hover {
-    background: black;
-    color: white;
     border-radius: 3px;
 }
 .menu li:last-child:hover {
@@ -113,14 +107,10 @@ input[type=checkbox]{
     user-select: none;
 }
 #signUpBtn {
-    background: dodgerblue;
-    padding: 12px 30px;
-    border: none;
+    border: 2px solid black;
     border-radius: 6px;
-    color: white;
-}
-#signUpBtn:hover {
-    
+    padding: 13px 25px;
+    color: black;
 }
 /* end-nav */
 
@@ -452,8 +442,8 @@ input[type=checkbox]{
 
 .access-p {
     font-size: 1.2rem;
-    font-weight: 300;
-    color: rgb(36, 36, 36);
+    font-weight: 500;
+    color: rgb(0, 0, 0);
     line-height: 1.6rem;
     max-width: 800px;
     margin:10px auto 5vh auto;
@@ -573,10 +563,10 @@ input[type=checkbox]{
     margin: 40px 0;
 }
 .value-boxes > div:nth-child(2) button {
-    padding: 13px 40px;
+    padding: 15px 80px;
     border: none;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 20px;
     background: dodgerblue;
     color: white;
     margin: 0px 0;
@@ -926,43 +916,52 @@ footer .consst > div {
     padding: 5px 10px;
 }
 
-
-
-
-
-
-/*Study Maaterials*/
-.study-materials {
-    text-align: center;
-    padding: 10vh 10px;
-    margin: 50px 0;
-    background: #f1f1e6;
+/* study materials */
+.study-m {
+    width: 100%;
+    min-height: 500px;
+    /* background: orange; */
+    margin: 17vh auto;
 }
-.study-materials p {
-    font-size: 14px;
-    font-weight: 300;
-    color: grey;
-    margin: 0px 0 0px 0;
+.m-box {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-.study-materials button {
-    padding: 12px 70px;
-    border: none;
-    margin: 0px 0;
-    border-radius: 40px;
-    background: blue;
-    color: white;
-    font-weight: 700;
+.m-box > div {
+    width: 700px;
+    min-height: 200px;
+} 
+.m-box img {
+    width: 100%;
 }
-.study-materials button:hover {
-    background: rgb(96, 147, 255);
-    color: white;
-}
-.study-materials button:focus {
-    background: rgb(96, 147, 255);
+.m-box button {
+    background: #daa21c;
     color: white;
     border: none;
+    border-radius: 6px;
+    padding: 15px 80px;
+    font-size: 20px;
+}
+.m-box h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color:#005ea1;
+}
+.m-box h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.m-box p {
+    font-size: 1.1rem;
+    margin: 40px 0;
+    line-height: 1.6rem;
 }
 
+/* end-study materials */
 
 /* offer */
 .offer-section {
@@ -1351,72 +1350,6 @@ footer .consst > div {
 }
 /*TABLET DEVELOPMENT*/
 @media (max-width:1200px) {
- /* Navigation */
-
-.nav {
-    width: 100%;
-    background: rgba(180, 180, 180, 0.1);
-    padding: 35px 10px;
-    top: 0;
-    z-index: 20;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(5rem);
-}
-/* navlinks */
-.nav a {
-
-}
-.logo {
-    font-size: 30px;
-}
-.menu {
-    width: 100%;
-    height: 100vh;
-    display: none;
-    gap: 0;
-    font-size: 1.3rem;
-    position: absolute;
-    background: #005ea1;
-    background: rgba(255, 255, 255, 0.97);
-    backdrop-filter: blur(5rem);
-    opacity: none;
-    color: black;
-    right: 0;
-    text-align: center;
-    padding: 16px 0;
-    z-index: 90;
-    transition: .5s ease-in-out;
-}
-.menu li {
-    padding: 5px;
-    font-weight:700;
-    font-size: 1.5rem;
-    margin-top: 3rem;
-}
-.menu li:hover {
-    border-bottom: none;
-    transition: 0.3s ease;
-}
-.menu li + li {
-    margin-top: 22px;
-}
-input[type=checkbox]:checked ~ .menu {
-    display: block;
-}
-.hamburger {
-    display: block;
-    font-size: 24px;
-    user-select: none;
-}
     
 
 /* MODAL BEGINNING CSS */
@@ -1689,6 +1622,10 @@ input[type=checkbox]:checked ~ .menu {
         height: 100%;
         margin: 0;
         padding: 0;
+    }
+    .learn-more-content > div:nth-child(2) {
+        /* background: greenyellow; */
+        padding: 2rem 1rem 0rem 1rem;
     }
     #close-pop-lrnMre {
         border: none;
@@ -1974,5 +1911,124 @@ input[type=checkbox]:checked ~ .menu {
     align-items: center;
     justify-content: space-between;
 }
+
+
+/* study materials */
+.study-m {
+    width: 100%;
+    min-height: 500px;
+    /* background: orange; */
+    margin: 17vh auto;
+}
+.m-box {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.m-box > div {
+    width: 90%;
+    min-height: 200px;
+} 
+.m-box img {
+    width: 100%;
+}
+.m-box button {
+    width: 100%;
+    background: #daa21c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 80px;
+    font-size: 20px;
+}
+.m-box h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color:#005ea1;
+    text-align: center;
+    padding: 20px 0;
+}
+.m-box h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.m-box p {
+    font-size: 1.1rem;
+    margin: 40px 0;
+    line-height: 1.6rem;
+}
+/* Navigation */
+
+.nav {
+    width: 100%;
+    background: rgba(180, 180, 180, 0.1);
+    padding: 35px 10px;
+    top: 0;
+    z-index: 20;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5rem);
+}
+/* navlinks */
+.nav a {
+
+}
+.logo {
+    font-size: 30px;
+}
+.menu {
+    width: 80%;
+    height: 100vh;
+    display: none;
+    gap: 0;
+    font-size: 1.3rem;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(5rem);
+    opacity: none;
+    color: black;
+    right: 0;
+    padding: 16px 0;
+    z-index: 90;
+    transition: .5s ease-in-out;
+}
+.menu li {
+    max-width: 160px;
+    margin: 0 auto;
+    padding: 5px;
+    font-weight:400;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+.menu li:hover {
+    border-bottom: none;
+    transition: 0.3s ease;
+}
+.menu li + li {
+    margin-top: 22px;
+}
+input[type=checkbox]:checked ~ .menu {
+    display: block;
+}
+.hamburger {
+    display: block;
+    font-size: 24px;
+    user-select: none;
+}
+ 
+
+/* end-study materials */
     }
     /*End of mobile dev*/
