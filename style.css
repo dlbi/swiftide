@@ -37,11 +37,11 @@ li {
     text-align: center;
     font-size: 3.5rem;
     padding: 20px 0;
-    font-weight: 900;
+    font-weight: 700;
 }
 .invalid {
     color: rgb(247, 247, 247);
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: -100px;
     font-size: .9rem;
 }
@@ -98,14 +98,14 @@ li {
 }
 .team-box {
     max-width: 1500px;
-    margin: 5vh auto;
+    margin:2vh auto 5vh auto;
     padding: 20px;
 }
 .team-box h1 {
     font-size: 3.6rem;
     padding: 10px 0;
     margin: 0;
-    color: #daa21c;
+    color: #ff8200;
 }
 .team-box h3 {
     font-weight: 600;
@@ -137,7 +137,7 @@ li {
 }
 .join-team {
     border: none;
-    background: dodgerblue;
+    background: #0026ec;
     color: white;
     padding: 10px 45px;
     font-size: 1rem;
@@ -172,7 +172,7 @@ li {
 .liner {
     width: 60px;
     height: 5px;
-    background: dodgerblue;
+    background: #0026ec;
     border-radius: 50px;
     margin: 10px 0;
 }
@@ -186,14 +186,14 @@ li {
     box-shadow: 0px 0px 20px rgb(221, 221, 221);
 }
 .qualities > div:nth-child(2) h1{
-    color: dodgerblue;
+    color: #0026ec;
 }
 .qualities > div:nth-child(3) {
     max-width: 350px;
     height: 300px;
     padding:4em 25px;
     box-shadow: 0px 0px 20px rgb(221, 221, 221);
-    background: dodgerblue;
+    background: #0026ec;
     color: white;
 }
 
@@ -208,14 +208,14 @@ li {
 .line {
     width: 100px;
     height: 4px;
-    background:#daa21c;
+    background:#ff8200;
     margin: 20px auto;
 }
 /* tooltip */
 .tooltiptext {
     visibility: hidden;
     width: 250px;
-    background: dodgerblue;
+    background: #0026ec;
     color: #ffff;
     text-align: center;
     border-radius: 6px;
@@ -264,7 +264,7 @@ li {
 .menu {
     display: flex;
     gap: 5rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .menu li {
     padding: 10px;
@@ -283,16 +283,18 @@ input[type=checkbox]{
     display: none;
     font-size: 24px;
     user-select: none;
-    color: rgb(0, 128, 255);
-    font-weight: 900;
-    border: 2px solid rgb(0, 128, 255);
+    color: #0026ec;
+    font-weight: 700;
+    border: 2px solid #0026ec;
     padding: 2px 8px;
 }
 #signUpBtn {
-    border: 2px solid black;
+    background: #0026ec;
+    /* border: 2px solid black; */
     border-radius: 6px;
     padding: 13px 25px;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
 }
 /* end-nav */
 
@@ -329,7 +331,7 @@ input[type=checkbox]{
     border-radius: 6px;
     font-size: 1.1rem;
     margin-top: 20px;
-    background:#daa21c;
+    background:#ff8200;
     color: #000;
 }
 .lrnMre-p1 {
@@ -378,7 +380,7 @@ input[type=checkbox]{
     backdrop-filter: blur(0.1rem);
 }
 .qst {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.8rem;
 }
 .modal p {
@@ -433,7 +435,7 @@ input[type=checkbox]{
 }
 .notice-modal-content button {
     border-radius: 6px;
-    background: dodgerblue;
+    background: #0026ec;
     color: white;
     width: 90%;
     border: none;
@@ -471,7 +473,7 @@ input[type=checkbox]{
     background:url(./bg-images/glassCopy.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
     overflow: hidden;
 }
 .capsule2 {
@@ -507,12 +509,12 @@ input[type=checkbox]{
 .blog-header h1 {
     color: rgb(245, 245, 247);
     font-size: 5rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 .blog-header h2 {
     margin-top: -50px;
     font-weight: 800;
-    color: dodgerblue;
+    color: #0026ec;
     font-size: 2rem;
     
 }
@@ -521,7 +523,7 @@ input[type=checkbox]{
     font-size: 3rem;
     max-width: 1100px;
     margin: auto;
-    font-weight: 900;
+    font-weight: 700;
     padding:0 10px;
 }
 .blog-post-title p {
@@ -599,7 +601,7 @@ input[type=checkbox]{
 .first-head{
     max-width: 1200px;
     margin:15vh auto 2vh auto;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 4rem;
     /* background: cadetblue; */
     line-height: 6rem;
@@ -609,7 +611,7 @@ input[type=checkbox]{
 
 
 #spin {
-    color:#daa21c;
+    color:#ff8200;
 }
 #spin::after {
     content: "";
@@ -733,7 +735,7 @@ input[type=checkbox]{
     text-align: right;
 }
 .value-boxes > div:nth-child(2) h2:nth-child(1) {
-    color: #daa21c;
+    color: #ff8200;
     font-size: 1.8rem;
 }
 .value-boxes > div:nth-child(2) h2 {
@@ -749,18 +751,18 @@ input[type=checkbox]{
     border: none;
     border-radius: 6px;
     font-size: 20px;
-    background: dodgerblue;
+    background: #0026ec;
     color: white;
     margin: 0px 0;
 }
 .section-1 {
-    color:#daa21c;
+    color:#ff8200;
     font-size: 1rem;
     font-weight: 800;
     text-align: center;
 }
 .section-2 {
-    color:#005ea1;
+    color:#0026ec;
     font-weight: 800;
     font-size: 3rem;
     text-align: center;
@@ -882,7 +884,7 @@ input[type=checkbox]{
 .scholarships h1{
     font-size: 2rem;
     font-weight: 800;
-    color:rgb(0, 0, 104);
+    color:#0026ec;
     margin-top: 5px;
 }
 
@@ -972,9 +974,6 @@ input[type=checkbox]{
     width: 70%;
 }
 
-
-
-
 /*FOOTER*/
 footer {
     background: black;
@@ -1032,12 +1031,6 @@ footer .consst > div {
     font-size: .8rem;
     color: grey;
 }
-
-
-
-
-
-
 
 
 /*access test box*/
@@ -1121,7 +1114,7 @@ footer .consst > div {
     width: 100%;
 }
 .m-box button {
-    background: #daa21c;
+    background: #ff8200;
     color: white;
     border: none;
     border-radius: 6px;
@@ -1131,7 +1124,7 @@ footer .consst > div {
 .m-box h1 {
     font-size: 2.5rem;
     font-weight: 800;
-    color:#005ea1;
+    color:#0026ec;
 }
 .m-box h3 {
     font-size: 1.5rem;
@@ -1155,7 +1148,7 @@ footer .consst > div {
     text-align: center;
     font-size: 3rem;
     font-weight: 800;
-    color: #005ea1;
+    color: #0026ec;
 }
 .offer p {
     max-width: 700px;
@@ -1186,7 +1179,7 @@ footer .consst > div {
 }
 .offer-boxes > div:nth-child(2){
     box-shadow: 0px 0px 40px #ddd;
-    background:dodgerblue;
+    background:#0026ec;
     color: white;
 }
 .offer-boxes > div:nth-child(1) {
@@ -1238,7 +1231,7 @@ footer .consst > div {
     background:#dff1ff;
     padding: 7vh 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgb(182, 182, 182);
+    /* box-shadow: 0px 0px 20px lavender; */
     z-index: 10;
 }
 .newsletter h1 {
@@ -1274,14 +1267,14 @@ footer .consst > div {
     padding: 14px 40px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background: dodgerblue;
+    background: #0026ec;
     color: whitesmoke;
     font-weight: 700;
     border:none ;
     font-size: 20px;
 }
 .newsletter #submit-btn:hover {
-    background: blue;
+    background: #0026ec;
     color: white;
 }
 .newsletter #submit-btn:focus {
@@ -1294,7 +1287,7 @@ footer .consst > div {
 .h1latest {
     max-width: 1500px;
     margin: 0 auto;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.8rem;
     padding: 15px;
 }
@@ -1477,7 +1470,7 @@ footer .consst > div {
     color: white;
 }
 .developers-boxes button:focus {
-    background: dodgerblue;
+    background: #0026ec;
 }
 .C1 {
     font-weight: 400;
@@ -1493,7 +1486,7 @@ footer .consst > div {
 /* modal sign up form */
 .exam-name {
     color:rgb(243, 243, 243);
-    font-weight: 900;
+    font-weight: 700;
 }
 .sign-up-form {
     margin-top: 20px;
@@ -1505,7 +1498,7 @@ footer .consst > div {
     font-weight: 700;
     font-size: 1.2rem;
     padding: 10px 0;
-    color: dodgerblue;
+    color: #0026ec;
 }
 .short-info {
     font-size: .8rem;
@@ -1600,7 +1593,7 @@ footer .consst > div {
 }
 
 .notice-modal-content button {
-    background: dodgerblue;
+    background: #0026ec;
     color: white;
     width: 90%;
     border: none;
@@ -1610,7 +1603,7 @@ footer .consst > div {
     margin-bottom: 15px;
 }
 .qst {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.8rem;
 }
 .modal p {
@@ -1658,7 +1651,7 @@ footer .consst > div {
 }
 
 .notice-modal-content button {
-    background: dodgerblue;
+    background: #0026ec;
     color: white;
     width: 90%;
     border: none;
@@ -1682,7 +1675,7 @@ footer .consst > div {
 .h1latest {
     max-width: 1500px;
     margin: 0 auto;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.8rem;
     padding: 15px;
 }
@@ -1752,7 +1745,7 @@ footer .consst > div {
 }
 
 .notice-modal-content button {
-    background: dodgerblue;
+    background: #0026ec;
     color: white;
     width: 90%;
     border: none;
@@ -1790,7 +1783,7 @@ footer .consst > div {
     .tooltiptext {
         visibility: hidden;
         width: 200px;
-        background:dodgerblue;
+        background:#0026ec;
         color: #ffff;
         text-align: center;
         border-radius: 6px;
@@ -1839,7 +1832,7 @@ footer .consst > div {
         border-radius: 6px;
         font-size: 1.1rem;
         margin-top: 20px;
-        background:#daa21c;
+        background:#ff8200;
         color: #000;
     }
     .noticeModal {
@@ -1866,7 +1859,7 @@ footer .consst > div {
     }
     .notice-modal-content button {
         border-radius: 6px;
-        background: dodgerblue;
+        background: #0026ec;
         color: white;
         width: 100%;
         border: none;
@@ -2014,7 +2007,7 @@ footer .consst > div {
     height:540px;
 }
 .value-boxes > div:nth-child(2) h2:nth-child(1) {
-    color: #daa21c;
+    color:#ff8200;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
@@ -2038,7 +2031,7 @@ footer .consst > div {
     border: none;
     border-radius: 6px;
     font-size: 19px;
-    background: dodgerblue;
+    background: #0026ec;
     color: white;
     margin: 0px 0;
 }
@@ -2131,7 +2124,7 @@ footer .consst > div {
 }
 .m-box button {
     width: 100%;
-    background: #daa21c;
+    background: #ff8200;
     color: white;
     border: none;
     border-radius: 6px;
@@ -2230,7 +2223,7 @@ input[type=checkbox]:checked ~ .menu {
     text-align: center;
     font-size: 2.5rem;
     padding: 15px;
-    font-weight: 900;
+    font-weight: 700;
 }
 .about-boxes {
     max-width: 1500px;
@@ -2285,7 +2278,7 @@ font-size: 1rem;
 }
 .team-box {
 max-width: 1500px;
-margin: 2vh auto;
+margin:0vh auto 5vh auto;
 padding: 20px;
 }
 .team-box h1 {
@@ -2327,7 +2320,7 @@ max-height: 250px;
 .join-team {
 width: 100%;
 border: none;
-background: dodgerblue;
+background: #0026ec;
 color: white;
 padding: 13px 50px;
 font-size: 1.1rem;
@@ -2362,7 +2355,7 @@ line-height: 1.2rem;
 .liner {
 width: 60px;
 height: 5px;
-background: dodgerblue;
+background: #0026ec;
 border-radius: 50px;
 margin: 10px 0;
 }
@@ -2378,14 +2371,14 @@ padding:3em 25px;
 box-shadow: 0px 0px 20px rgb(221, 221, 221);
 }
 .qualities > div:nth-child(2) h1{
-color: dodgerblue;
+color: #0026ec;
 }
 .qualities > div:nth-child(3) {
 max-width: 350px;
 height: 300px;
 padding:4em 25px;
 box-shadow: 0px 0px 20px rgb(221, 221, 221);
-background: dodgerblue;
+background: #0026ec;
 color: white;
 }
 
