@@ -7,6 +7,7 @@ lrnMre.addEventListener('click', function() {
 clsLrn.addEventListener('click', function() {
     lrnBx.style.display = 'none';
 });
+
 // Sticky navbar
 window.onscroll = function() {
     myFunction();
@@ -19,7 +20,9 @@ function myFunction() {
     } else {
         navBar.classList.remove('sticky');
     }
-}
+};
+
+
 // // Notice Modal
 const noticeModal = document.querySelector('#myNoticeModal');
 let closeNotice = document.querySelector('#close');

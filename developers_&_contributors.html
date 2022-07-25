@@ -17,85 +17,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swift Approach To Learning</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="jquery-3.6.0.min.js"></script>
 </head>
 <body>
-   <!--Navigation-->
-
-
-<section class="contributors">
-    <h1>Developers <span style="color: rgb(77, 77, 77);">&</span>  <span style="color: dodgerblue;">Contributors</span></h1><br>
-    <p style="max-width: 900px;font-size: 14px;color: grey;margin: auto;padding: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quaerat harum laudantium illum eveniet! Quia dicta nemo ipsa ut iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, tempore.</p><br><br><br><br><br>
-    <div class="parent-contributors">
-        <div class="developers-boxes">
-            <img src="images/oluy.jpg" width="100%" alt="">
-            <p class="C1">David Bilson</p>
-            <p class="C2">Founder Co_name</p>
-            <p class="C3">CTO & Lead Engineer </p><br>
-            <p class="C4">Social Media Icon</p><br>
-            <p style="text-align: justify;padding:20px;color: rgb(0, 0, 0);font-size: 14px;margin:auto;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis sunt aliquid porro dolorum, rerum quidem magnam voluptatum! Sit cum illum nam, eius, iste nostrum aliquam iusto eaque voluptatibus hic commodi eum aspernatur est? Sed.</p>
-            <button>Contact</button>
-        </div> 
-        <div class="developers-boxes">
-            <img src="images/oluy.jpg" width="100%" alt="">
-            <p class="C1">David Bilson</p>
-            <p class="C2">CEO & FOunder, Co_name</p>
-            <p class="C3">Senior Frontend Engineer</p><br>
-            <p class="C4">ICONS</p><br>
-            <p style="text-align: justify;padding:20px;color: rgb(0, 0, 0);font-size: 14px;margin:auto;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis sunt aliquid porro dolorum, rerum quidem magnam voluptatum! Sit cum illum nam, eius, iste nostrum aliquam iusto eaque voluptatibus hic commodi eum aspernatur est? Sed.</p>
-            <button>Contact</button>
-        </div> 
-         <div class="developers-boxes">
-            <img src="images/oluy.jpg" width="100%" alt="">
-            <p class="C1">David Bilson</p>
-            <p class="C2">CEO & FOunder, Co_name</p>
-            <p class="C3">Senior Frontend Engineer</p><br>
-            <p class="C4">ICONS</p><br>
-            <p style="text-align: justify;padding:20px;color: rgb(0, 0, 0);font-size: 14px;margin:auto;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis sunt aliquid porro dolorum, rerum quidem magnam voluptatum! Sit cum illum nam, eius, iste nostrum aliquam iusto eaque voluptatibus hic commodi eum aspernatur est? Sed.</p>
-            <button>Contact</button>
-        </div> 
-        <div class="developers-boxes">
-            <img src="images/oluy.jpg" width="100%" alt="">
-            <p class="C1">David Bilson</p>
-            <p class="C2">CEO & FOunder, Co_name</p>
-            <p class="C3">Senior Frontend Engineer</p><br>
-            <p class="C4">ICONS</p><br>
-            <p style="text-align: justify;padding:20px;color: rgb(0, 0, 0);font-size: 14px;margin:auto;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis sunt aliquid porro dolorum, rerum quidem magnam voluptatum! Sit cum illum nam, eius, iste nostrum aliquam iusto eaque voluptatibus hic commodi eum aspernatur est? Sed.</p>
-            <button>Contact</button>
-        </div> 
+    <!-- NAV BAR -->
+<nav class="nav" id="navBar">
+    <!-- Logo -->
+    <div class="logo"><img src="./logo/logo2.png" width="140px" alt=""></div>
+    <!-- navMenu -->
+    <ul>
+    <!-- Let's get a ham -->
+    <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <div class="menu">
+    <li><a href="./index.html" ><img src="./icons/home.svg" width="15px" alt="home-icon">&nbsp; Home</a></li>
+    <li><a href=""><img src="./icons/magic-wand.svg" width="15px" alt="take-test icon">&nbsp; Take Test</a></li>
+    <li><a href="./aboutus.html"><img src="./icons/bulb.svg" width="15px" alt="about-us-icon">&nbsp; About</a></li>
+    <li><a href=""><img src="./icons/pencil.svg" width="15px" alt="blog-icon">&nbsp; Blog</a></li>
+    <li><a href="./developers_&_contributors.html" class="active"><img src="./icons/users-alt.svg" width="15px" alt="devs-icon">&nbsp; Developers</a></li>
+    <li><a href="./contact.html" ><img src="./icons/comment-alt.svg" width="15px" alt="contact-icon">&nbsp; Contact Us</a></li>
+    <li><a href="" id="signUpBtn"><img src="./icons/add-friend.png" width="13px" alt="sign-up-icon">&nbsp; Sign up</a></li>
     </div>
-</Section><br><br><br><br>
+    </ul>
+    </nav>
+    <!-- END OF NAV -->
+
+<section class="contributor">
+    <h1 class="page-heading">Hall <span class="conj">of</span>  <span class="second-col-c">Fame</span></h1><br>
+    <p class="page-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quaerat harum laudantium illum eveniet! Quia dicta nemo ipsa ut iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, tempore.</p>
+    <div class="parent-contributor">
+        <div class="developer-box" data-aos="fade-up" data-aos-duration="3000">
+            <img src="./images/exam.jpg" alt="founder-pic">
+            <h2 class="c-name"> David Bilson</h2>
+            <h3 class="c-title">Software Engineer & Founder @ testNow.</h3>
+            <p class="c-contact">T W</p>
+            <p class="c-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis sunt aliquid porro dolorum, rerum quidem magnam voluptatum! Sit cum illum nam, eius, iste nostrum aliquam iusto eaque voluptatibus hic commodi eum aspernatur est? Sed.</p>
+        </div> 
+        <div class="developer-box" data-aos="fade-up" data-aos-duration="3000">
+            <img src="./images/exam.jpg" alt="founder-pic">
+            <h2 class="c-name"> David Bilson</h2>
+            <h3 class="c-title">Software Engineer & Founder @ testNow.</h3>
+            <p class="c-contact">T W</p>
+            <p class="c-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis sunt aliquid porro dolorum, rerum quidem magnam voluptatum! Sit cum illum nam, eius, iste nostrum aliquam iusto eaque voluptatibus hic commodi eum aspernatur est? Sed.</p>
+        </div> 
+        <div class="developer-box" data-aos="fade-up" data-aos-duration="3000">
+            <img src="./images/exam.jpg" alt="founder-pic">
+            <h2 class="c-name"> David Bilson</h2>
+            <h3 class="c-title">Software Engineer & Founder @ testNow.</h3>
+            <p class="c-contact">T W</p>
+            <p class="c-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis sunt aliquid porro dolorum, rerum quidem magnam voluptatum! Sit cum illum nam, eius, iste nostrum aliquam iusto eaque voluptatibus hic commodi eum aspernatur est? Sed.</p>
+        </div> 
+        <div class="developer-box" data-aos="fade-up" data-aos-duration="3000">
+            <img src="./images/exam.jpg" alt="founder-pic">
+            <h2 class="c-name"> David Bilson</h2>
+            <h3 class="c-title">Software Engineer & Founder @ testNow.</h3>
+            <p class="c-contact">T W</p>
+            <p class="c-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis sunt aliquid porro dolorum, rerum quidem magnam voluptatum! Sit cum illum nam, eius, iste nostrum aliquam iusto eaque voluptatibus hic commodi eum aspernatur est? Sed.</p>
+        </div> 
+        <div class="developer-box" data-aos="fade-up" data-aos-duration="3000">
+            <img src="./images/exam.jpg" alt="founder-pic">
+            <h2 class="c-name"> David Bilson</h2>
+            <h3 class="c-title">Software Engineer & Founder @ testNow.</h3>
+            <p class="c-contact">T W</p>
+            <p class="c-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis sunt aliquid porro dolorum, rerum quidem magnam voluptatum! Sit cum illum nam, eius, iste nostrum aliquam iusto eaque voluptatibus hic commodi eum aspernatur est? Sed.</p>
+        </div> 
+        <div class="developer-box" data-aos="fade-up" data-aos-duration="3000">
+            <img src="./images/exam.jpg" alt="founder-pic">
+            <h2 class="c-name"> David Bilson</h2>
+            <h3 class="c-title">Software Engineer & Founder @ testNow.</h3>
+            <p class="c-contact">T W</p>
+            <p class="c-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis sunt aliquid porro dolorum, rerum quidem magnam voluptatum! Sit cum illum nam, eius, iste nostrum aliquam iusto eaque voluptatibus hic commodi eum aspernatur est? Sed.</p>
+        </div> 
+        
+
+        
+
+    </div>
+</Section>
 
 <footer>
-    <div class="cover">
-        <div><h1>LOGO</h1></div>
-        <div>
-            <ul>
-                <li>CDN ARDUINO</li>
-                <li>ARTIFICIAL SEARCH</li>
-                <li>ELECTROLYTE</li>
-            </ul>
-        </div>
-    </div>
+    <section class="footer-section">
+      <div class="foot-logo">LOGO</div>
 
-    <div class="consst">
+      <div class="foot-class">
         <div>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur Lorem, ipsum.</li>
-                <li>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit.</li>
-                <li><a href="developers_&_contributors.html">Developers & Contributors</a></li>
-                <li>Privacy Policy</li>
-                <li>Terms and Conditions</li>
-            </ul>
+          <h3>Compnay</h3>
+          <p>About</p>
+          <p>Jobs</p>
+          <p>For the record</p>
         </div>
-        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod commodi rem nulla corrupti praesentium officia harum porro aut accusantium quasi dicta tenetur, doloribus qui laborum itaque vitae quo asperiores pariatur?</div>
         <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium non consequuntur quis ea fugiat nemo.
+          <h3>Compnay</h3>
+          <p>About</p>
+          <p>Jobs</p>
+          <p>For the record</p>
         </div>
-    </div>
-    <p class="copyright">Copyright &copy; 2022 ||  TravelNow Agency - Critic Inc.</p>
-</footer>
+        <div>
+          <h3>Compnay</h3>
+          <p>About</p>
+          <p>Jobs</p>
+          <p>For the record</p>
+        </div>
+      </div>
+
+      <div class="bottom-foot">
+        <div>
+          <ul class="foot-social">
+            <li>twitter</li>
+            <li>instagram</li>
+            <li>facebook</li>
+          </ul>
+        <ul class="foot-last">
+          <li>Legal</li>
+          <li>Privacy Policy</li>
+          <li>Cookies</li>
+          <li>About ads</li>
+        </ul>
+        </div>
+      </div>
+    </section>
+      <p class="copyright">Copyright &copy; 2022 ||  testNow. Inc - Developed by David Bilson</p>
+  </footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+easing: 'ease-out-back',
+duration: 1000
+});
+</script>
+<script>
+hljs.initHighlightingOnLoad();
+
+$('.hero__scroll').on('click', function(e) {
+$('html, body').animate({
+scrollTop: $(window).height()
+}, 1200);
+});
+</script>
+<script>
+    // Sticky navbar
+window.onscroll = function() {
+    myFunction();
+};
+let navBar = document.getElementById('navBar');
+let sticky = navBar.offsetTop;
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navBar.classList.add('sticky');
+    } else {
+        navBar.classList.remove('sticky');
+    }
+};
+</script>
 <script src="program.js"></script>
 </body>
 </html>

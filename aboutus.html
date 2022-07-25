@@ -28,7 +28,7 @@
   <!-- NAV BAR -->
   <nav class="nav" id="navBar">
     <!-- Logo -->
-    <div class="logo"><img src="./icons/logorem.png" width="100px" alt=""></div>
+    <div class="logo"><img src="./logo/logo2.png" width="140px" alt=""></div>
     <!-- navMenu -->
     <ul>
         <!-- Let's get a ham -->
@@ -39,8 +39,8 @@
         <li><a href=""><img src="./icons/magic-wand.svg" width="15px" alt="take-test icon">&nbsp; Take Test</a></li>
         <li><a href="" class="active"><img src="./icons/bulb.svg" width="15px" alt="about-us-icon">&nbsp; About</a></li>
         <li><a href=""><img src="./icons/pencil.svg" width="15px" alt="blog-icon">&nbsp; Blog</a></li>
-        <li><a href=""><img src="./icons/users-alt.svg" width="15px" alt="devs-icon">&nbsp; Developers</a></li>
-        <li><a href=""><img src="./icons/comment-alt.svg" width="15px" alt="contact-icon">&nbsp; Contact Us</a></li>
+        <li><a href="./developers_&_contributors.html"><img src="./icons/users-alt.svg" width="15px" alt="devs-icon">&nbsp; Developers</a></li>
+        <li><a href="./contact.html"><img src="./icons/comment-alt.svg" width="15px" alt="contact-icon">&nbsp; Contact Us</a></li>
         <li><a href="" id="signUpBtn"><img src="./icons/user.svg" width="15px" alt="sign-up-icon">&nbsp; Sign up</a></li>
         </div>
     </ul>
@@ -105,8 +105,48 @@
     </section>
         <!--FOOTER-->
         <footer>
-            <p class="copyright">Copyright &copy; 2022 ||  TravelNow Agency - Critic Inc.</p>
-        </footer>
+            <section class="footer-section">
+              <div class="foot-logo">LOGO</div>
+      
+              <div class="foot-class">
+                <div>
+                  <h3>Compnay</h3>
+                  <p>About</p>
+                  <p>Jobs</p>
+                  <p>For the record</p>
+                </div>
+                <div>
+                  <h3>Compnay</h3>
+                  <p>About</p>
+                  <p>Jobs</p>
+                  <p>For the record</p>
+                </div>
+                <div>
+                  <h3>Compnay</h3>
+                  <p>About</p>
+                  <p>Jobs</p>
+                  <p>For the record</p>
+                </div>
+              </div>
+      
+              <div class="bottom-foot">
+                <div>
+                  <ul class="foot-social">
+                    <li>twitter</li>
+                    <li>instagram</li>
+                    <li>facebook</li>
+                  </ul>
+                <ul class="foot-last">
+                  <li>Legal</li>
+                  <li>Privacy Policy</li>
+                  <li>Cookies</li>
+                  <li>About ads</li>
+                </ul>
+                </div>
+              </div>
+            </section>
+              <p class="copyright">Copyright &copy; 2022 ||  testNow. Inc - Developed by David Bilson</p>
+          </footer>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({
@@ -122,6 +162,21 @@
             scrollTop: $(window).height()
         }, 1200);
     });
+</script>
+<script>
+    // Sticky navbar
+window.onscroll = function() {
+    myFunction();
+};
+let navBar = document.getElementById('navBar');
+let sticky = navBar.offsetTop;
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navBar.classList.add('sticky');
+    } else {
+        navBar.classList.remove('sticky');
+    }
+};
 </script>
     <script src="program.js"></script>
 </html>
